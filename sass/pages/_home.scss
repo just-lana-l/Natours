@@ -16,7 +16,7 @@
     padding: 20rem 0;
     background-image: 
         linear-gradient(to right bottom, #7ed56f9d, #28b48575 ), 
-        url(/img/nat-4.jpg);
+        url(../img/nat-4.jpg);
         background-size: cover;
         transform: skewY(-7deg);
         margin-top: -7rem;
@@ -56,19 +56,19 @@
     @include respond(tab-port) {
         padding: 5rem;
         width: 100%;
-        background-image: linear-gradient(rgba(#ffffff, .9) 0%,rgba(#ffffff, .9) 100%,transparent 50%),url(/img/nat-10.jpg);
+        background-image: linear-gradient(rgba(#ffffff, .9) 0%,rgba(#ffffff, .9) 100%,transparent 50%),url(../img/nat-10.jpg);
     }
 }
 
 .book {
-    background-image: linear-gradient(105deg, rgba(#ffffff, .9) 0%, rgba(#ffffff, .9) 50%, transparent 50%), url(/img/nat-10.jpg);
+    background-image: linear-gradient(105deg, rgba(#ffffff, .9) 0%, rgba(#ffffff, .9) 50%, transparent 50%), url(../img/nat-10.jpg);
     background-size: cover;
     border-radius: 3px;
     box-shadow: 0 2rem 2rem rgba( #000000, 0.35);
 
     @include respond(tab-port) {
         width: 100%;
-        background-image: linear-gradient(rgba(#ffffff, .9) 0%,rgba(#ffffff, .9) 100%,transparent 50%),url(/img/nat-10.jpg);
+        background-image: linear-gradient(rgba(#ffffff, .9) 0%,rgba(#ffffff, .9) 100%,transparent 50%),url(../img/nat-10.jpg);
     }
 
     &__form {
