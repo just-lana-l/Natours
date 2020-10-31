@@ -1,0 +1,87 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 15px 40px;
+        display: inline-block;
+        border-radius: 100px;
+        transition: all .2s;
+        position: relative;
+        font-size: $default-font-size;
+
+        //change for the button element
+        border: none;
+        cursor: pointer;
+
+    }
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+    }
+    &:active,
+    &:focus {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+        outline: none;
+    }
+
+    &--white {
+        background-color: #fff;
+        color: #777777;
+
+        &::after {
+        background-color: rgb(255, 255, 255);
+        }
+    }
+
+    &--green {
+        background-color:$primary-dark-green;
+        color: #fff;
+
+        &::after {
+        background-color: $primary-dark-green;
+        }
+    }
+
+    &::after {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    
+    &:hover::after {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    
+    &--animated {
+        animation: moveInBottom 1s;
+        animation-fill-mode: backwards;
+    }
+}
+
+.btn-text {
+    &:link,
+    &:visited {
+        color: $primary-dark-green;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $primary-dark-green;
+        padding: 3px;
+        font-size: $default-font-size;
+    }
+    &:hover {
+        background-color: $primary-dark-green;
+        color: #fff;
+        box-shadow: 1rem 1rem 1rem rgba($color: #000000, $alpha: .15);
+    }
+}

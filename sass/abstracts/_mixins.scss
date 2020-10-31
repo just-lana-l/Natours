@@ -1,0 +1,43 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+//Media Query 
+
+/* 
+0 - 600 phone
+600 - 900 Tablet
+900 - 1200 - tablet landscapr
+
+1800 + desktop
+*/
+
+@mixin respond ($breackpoint) {
+    @if $breackpoint == phone {
+        @media (max-width: 600px ) { @content};
+    }
+
+    @if $breackpoint == tab-port {
+        @media (max-width: 900px ) { @content};
+    }
+
+    @if $breackpoint == tab-land {
+        @media (max-width: 1200px ) { @content};
+    }
+
+    @if $breackpoint == desktop {
+        @media (min-width: 1800px ) { @content};
+    }
+
+}
