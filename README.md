@@ -1,3 +1,5 @@
+https://just-lana-l.github.io/Natours/ github pages project preview
+
 Natours
 This landing page about group tours crated with Udemy course about sass and css animations.
 
