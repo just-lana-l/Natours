@@ -10,7 +10,7 @@ gulp.task('browser-sync', function() {
         }
     });
 
-    gulp.watch("src/*.html").on('change', browserSync.reload);
+    gulp.watch("./*.html").on('change', browserSync.reload);
 });
 
 gulp.task ('style', function() {
